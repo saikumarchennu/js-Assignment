@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.key,
+.value {
+  display: block;
+}
+
+article {
+  width: 600px;
+  margin: 70px auto;
+}
+
+.name-header {
+  text-align: center;
+}
+
+.back {
+  color: #fff;
+  padding: 6px 12px;
+  position: absolute;
+  top: -12px;
+  left: -30px;
+  background-color: #4263eb;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.emp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 25px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 10px 20px 5px #e9ecef;
+}
+
+.key {
+  margin-bottom: 10px;
+}
+
+.gen-age,
+.team-mang {
+  display: flex;
+}
+
+.gen,
+.age,
+.team,
+.mang {
+  flex: 1 0 0;
+}
+
+.idproof {
+  display: flex;
+  gap: 30px;
+}

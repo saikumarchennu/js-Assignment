@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Employee Management</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Employee Management</h1>
+        <button class="add-emp">ADD EMPLOYEE</button>
+      </header>
+
+      <article></article>
+    </div>
+    <div class="modal-bg">
+      <div class="modal">
+        <form class="emp-form" name="emp-form">
+          <h2 class="form-header">ADD EMPLOYEE</h2>
+          <fieldset>
+            <div class="name">
+              <div>
+                <label for="first-name">First Name</label><br />
+                <input
+                  id="first-name"
+                  name="first-name"
+                  type="text"
+                  placeholder=" First Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="middle-name">Middle Name</label><br />
+                <input
+                  id="middle-name"
+                  name="middle-name"
+                  type="text"
+                  placeholder=" Middle Name"
+                />
+              </div>
+              <div>
+                <label for="last-name">Last Name</label><br />
+                <input
+                  id="last-name"
+                  name="last-name"
+                  type="text"
+                  placeholder=" Last Name"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label for="email">E-Mail</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" E-Mail"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="mobile">Mobile Number</label><br />
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              placeholder=" Mobile Number"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <div class="age-gen">
+              <div>
+                <label for="gender">Gender</label><br />
+                <select name="gender" id="gender" required>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="others">others</option>
+                </select>
+              </div>
+              <div>
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  placeholder=" Age"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="team-mang">
+              <div>
+                <label for="team">Team</label><br />
+                <select name="team" id="team" required>
+                  <option value="Development">Development</option>
+                  <option value="Testing">Testing</option>
+                  <option value="Human Resource">Human Resource</option>
+                  <option value="Finance">Finance</option>
+                </select>
+              </div>
+              <div>
+                <label for="mang">Manager</label>
+                <input
+                  type="text"
+                  name="mang"
+                  id="mang"
+                  placeholder=" Manager"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label for="addr-1">Address Line 1</label>
+            <input
+              type="text"
+              name="addr-1"
+              id="addr-1"
+              placeholder="Address Line 1"
+              required
+            /><br /><br />
+
+            <label for="addr-2">Address Line 2</label>
+            <input
+              type="text"
+              name="addr-2"
+              id="addr-2"
+              placeholder="Address Line 2"
+            /><br /><br />
+
+            <div class="pin">
+              <div>
+                <label for="city">City</label><br />
+                <input type="text" name="city" id="city" placeholder=" City" />
+              </div>
+              <div>
+                <label for="state">State</label><br />
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder=" State"
+                  required
+                />
+              </div>
+              <div>
+                <label for="pincode">Pincode</label><br />
+                <input
+                  type="text"
+                  name="pincode"
+                  id="pincode"
+                  placeholder=" Pincode"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="id-proof">
+              <div>
+                <label for="id-type">ID Type</label><br />
+                <select name="id-type" id="ID type" required>
+                  <option value="PAN Card">PAN Card</option>
+                  <option value="Aadhar Card">Aadhar Card</option>
+                  <option value="DL">DL</option>
+                </select>
+              </div>
+              <div>
+                <label for="id-number">ID Number</label><br />
+                <input
+                  type="text"
+                  name="id-number"
+                  id="id-number"
+                  placeholder=" ID Number"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+          <input type="submit" class="submit-btn" value="SUBMIT" />
+          <span class="close-bg">&times;</span>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>

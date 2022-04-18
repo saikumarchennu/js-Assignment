@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+.container {
+  width: 896px;
+  margin: 35px auto;
+}
+
+header {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+button {
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-emp,
+.clr-strg {
+  padding: 10px;
+  color: #343a40;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  background-color: #fff;
+}
+
+.view-det,
+.del-emp {
+  padding: 5px;
+  color: #fff;
+}
+
+.view-det {
+  background-color: #4263eb;
+}
+
+.del-emp {
+  background-color: red;
+}
+
+.employee-details {
+  border-radius: 12px;
+  box-shadow: 0 10px 20px 5px #e9ecef;
+  padding: 20px 15px;
+  display: grid;
+  grid-template-columns: 140px 80px 40px 120px 140px 90px 90px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+span {
+  display: inline-block;
+}
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.modal-bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 0 20px 20px rbga(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+input {
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1.5px solid black;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal .name,
+.modal .age-gen,
+.modal .team-mang,
+.modal .pin,
+.modal .id-proof {
+  display: flex;
+  justify-content: space-between;
+}
+
+#id-number {
+  width: 236.56px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1.5px solid black;
+}
+
+.submit-btn {
+  background-color: #4263eb;
+  padding: 5px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  margin-top: 10px;
+}
+
+.close-bg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
